@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------------------
+# Data and outputs (NEVER commit medical imaging data — DUA-restricted, large)
+# ---------------------------------------------------------------------------
+data/
+outputs/
+outputs_covariance/
+
+# Imaging files (NIfTI / DICOM / transforms) wherever they appear
+*.nii
+*.nii.gz
+*.dcm
+*.mat
+*.zip
+
+# ---------------------------------------------------------------------------
+# Third-party tools — install separately, do not redistribute (see README)
+# ---------------------------------------------------------------------------
+UK_biobank_pipeline_v_1/
+ICA-AROMA/
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# IDE / OS / local tool config
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+.claude/
+.cursor/
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# Generated intermediates from the pipelines
+# ---------------------------------------------------------------------------
+slice_order.txt
+*.par
+melodic_output/
+aroma_output/
+func2struct.*
+struct2standard.*
+*_warp.nii.gz
